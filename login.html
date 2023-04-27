@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<title>Responsive sliding form</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="css/stylee-1.css">
+	</head>
+	<body>
+
+<div class="head">
+	<!-- <header>
+	 <!-- <div id="menu-bar" class="fas fa-bars"></div> -->
+<!-- 
+ <a href="#" class="logo">Tbuddy</a>
+
+
+	    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+     <div class="btnn">
+        <a href="index.html">Back</a>
+    </div>
+</header> -->
+<div class="btnn">
+    <a href="index.html" >Back</a>
+</div>
+<div class="container">
+			<div class="blueBg">
+				<div class="box signin">
+					<h2>Already have an account ?</h2>
+					<button class="signinBtn">Sign in</button>
+				</div>
+				<div class="box signup">
+					<h2>Don't have an account ?</h2>
+					<button class="signupBtn">Sign up</button>
+				</div>
+			</div>
+			<div class="formBx">
+				<div class="form signinForm">
+					<form>
+						<h3>Sign In</h3>
+						<input type="text" placeholder="Username">
+						<input type="password" placeholder="Password">
+						<input type="submit" value="Login">
+						<a href="pass.html" class="forget">Forget password</a>
+					</form>
+				</div>	
+				<div class="form signupForm">
+					<form>
+						<h3>Sign Up</h3>
+						<input type="text" placeholder="Username">
+						<input type="text" placeholder="Email Address">
+						<input type="password" placeholder="Password">
+						<input type="password" placeholder="Confirm Password">
+						<h5>Password must be same</h5>
+						<input type="submit" value="Register">
+					</form>
+				</div>	
+			</div>
+		</div>
+
+
+</div>
+
+
+
+		
+		<script>
+			const signinBtn = document.querySelector('.signinBtn');
+			const signupBtn = document.querySelector('.signupBtn');
+			const formBx = document.querySelector('.formBx');
+			const body = document.querySelector('body')
+
+			signupBtn.onclick = function(){
+				formBx.classList.add('active')
+				body.classList.add('active')
+			}
+			signinBtn.onclick=function(){
+				formBx.classList.remove('active')
+				body.classList.remove('active')
+			}
+		</script>	
+	</body>
+</html>

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Password </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        
+        body {
+            height: min-content;
+            /* background: url(./abstract-watercolor-background_23-2149069668.webp) ; */
+            /* background-color: rgb(17, 199, 249); */
+          background-image:url(./j.jpg) ;
+            background-size: 100% 130%;
+            background-repeat: no-repeat;
+        }
+        .head{
+            
+            
+            margin: auto;
+            
+ }
+ #box{
+    height: 500px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    /* background-color:rgb(159, 33, 33) ; */
+    /* box-shadow: 5px 5px 5px 5px rgb(255, 125, 73); */
+    margin-top: 30px;
+    /* border: solid 2px rgb(48, 119, 234); */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    
+ }
+ #heading{
+    margin-top: 70px;
+    height: fit-content;
+    width: fit-content;
+    letter-spacing: 5px;
+    /*  */
+    font-family: 'Pacifico', cursive;
+    text-shadow:5px 5px 5px 5px rgb(110, 103, 101) ;
+    color: rgb(103, 99, 94);
+            font-weight: bolder;
+            font-size: 70px;
+ }
+ .tmp{
+  margin-top: 80px;
+
+ }
+ .pre ,.cnf{
+    
+    font-family: 'Pacifico', cursive;
+    color: white;
+ }
+input{
+  width: 300px;
+  height: 30px;
+  border-radius: 4px;
+  background-color:rgb(255, 255, 255);
+}
+button{
+color: white;
+width: 100px;
+height: 40px;
+background-color: rgb(67, 61, 53);
+}
+button:hover{
+  background-color: rgb(167, 167, 188);
+  cursor:grab;
+}
+    </style>
+</head>
+<body>
+    
+  <div id="main">
+    <div class="head" id="heading">Trucker's Hub</div>
+    <div class="head" id="box">
+      <div class="tmp">
+        <div class="pre">
+          Enter ur new password: <br><br> 
+          <input type="password"  name="" id="j" placeholder="New Password">
+          <i class="fa-solid fa-eye" id="eye"></i>
+        </div><br>
+        <div class="cnf" style="margin-top: 20px;">
+          Confirm ur new password: <br><br>
+          <input type="text" name="" id="k" placeholder="Confirm Password">
+          
+        </div><br>
+        <div class="btn" style="text-align: center; margin-top: 30px;">
+          <button onclick="password()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function password(){
+      var password=document.getElementById("j").value;
+      var cpassword=document.getElementById("k").value;
+
+      if(password=="" && cpassword==""){
+        alert("The password field is empty");
+      }
+      else if(password==cpassword){
+        alert("Your Password Successfully changed");
+      }
+      else{
+        alert("The password should match");
+      }
+    }
+  </script>
+</body>
+</html>
